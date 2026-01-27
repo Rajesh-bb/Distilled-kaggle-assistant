@@ -76,21 +76,6 @@ We didn't just train; we engineered a pipeline for knowledge transfer.
 * PyTorch (CUDA enabled)
 * Transformers & PEFT
 
-### Quick Start (Local)
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/kaggle-assistant-distillation.git
-cd kaggle-assistant-distillation
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the inference server
-python app.py
-
-```
-
 ### Running on Colab
 
 1. Open the notebook `Kaggle_Assistant.ipynb`.
@@ -100,16 +85,9 @@ python app.py
 
 ---
 
-## 🖼️ Gallery
-
-*(Add screenshots of your UI here - The Dark Mode interface, the "Latency Badge", etc.)*
-
----
-
 ## 📜 License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 
-*Built with ❤️ by [Your Name] using Llama 3, QLoRA, and Coffee.*
