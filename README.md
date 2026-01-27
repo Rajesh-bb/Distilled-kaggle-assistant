@@ -30,8 +30,8 @@ We achieved massive efficiency gains without sacrificing the model's ability to 
 
 To visualize the impact, we tested both models with the same complex query: *"What is Overfitting?"*.
 
-* **[Watch Pro Model Demo (69s)]((https://drive.google.com/file/d/1sJvDrT0siOWwYt521MW67fxO9NfVAIvt/view?usp=sharing))** - *High accuracy, but slower generation.*
-* **[Watch Flash Model Demo (46s)]((https://drive.google.com/file/d/1cGxnb-nbwxr-dBUNoCaMpQaMig8wptrj/view?usp=sharing))** - *Same accuracy, **1.5x speedup**.*
+* **[Watch Pro Model Demo (69s)](https://drive.google.com/file/d/1sJvDrT0siOWwYt521MW67fxO9NfVAIvt/view?usp=sharing)** - *High accuracy, but slower generation.*
+* **[Watch Flash Model Demo (46s)](https://drive.google.com/file/d/1cGxnb-nbwxr-dBUNoCaMpQaMig8wptrj/view?usp=sharing)** - *Same accuracy, **1.5x speedup**.*
 
 ---
 
