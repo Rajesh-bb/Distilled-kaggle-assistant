@@ -78,7 +78,7 @@ We didn't just train; we engineered a pipeline for knowledge transfer.
 
 ### Running on Colab
 
-1. Open the notebook `Kaggle_Assistant.ipynb`.
+1. Open the notebook `knowledge_distillation_trainer(1).ipynb`.
 2. Add your **Ngrok Auth Token**.
 3. Run all cells to start the backend.
 4. Paste the generated public URL into `index.html`.
