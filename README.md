@@ -1,5 +1,22 @@
 # 🧠 Kai: Efficient Kaggle Assistant via Knowledge Distillation
 
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
+![Llama 3.2](https://img.shields.io/badge/Model-Llama_3.2-0467DF?style=for-the-badge&logo=meta&logoColor=white)
+
+![Kaggle](https://img.shields.io/badge/Trained_on-Kaggle_Tesla_T4-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)
+![Colab](https://img.shields.io/badge/Deployed_on-Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![Ngrok](https://img.shields.io/badge/Ngrok-1F1E37?style=for-the-badge&logo=ngrok&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+
+</div>
+
+---
+
 > **Big Brain Intelligence. Small Model Speed.**
 > *Engineered a domain-specific, lightweight AI assistant by distilling a fine-tuned Llama-3.2-3B (Teacher) into a Llama-3.2-1B (Student). The result? A deployment-ready model that runs 45% faster with 54% less memory.*
 
@@ -21,7 +38,7 @@ Deploying Large Language Models (LLMs) is a balancing act between **Intelligence
 We achieved massive efficiency gains without sacrificing the model's ability to understand code context.
 
 | Metric | 🐢 Teacher Model (3B) | 🐇 Student Model (1B) | 📉 Improvement |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | **Model Size** | 2.1 GB | **980 MB** | **54% Smaller** |
 | **Inference Latency** | 4246 ms | **2290 ms** | **~44% Faster** |
 | **VRAM Usage** | High (>6GB) | **Low (<3GB)** | **Edge Ready** |
@@ -43,28 +60,24 @@ To ensure the model speaks the language of Data Science, we curated a mix of hig
 
 * **[Google MBPP (Mostly Basic Python Problems)](https://www.google.com/search?q=https://huggingface.co/datasets/google-research-datasets/mbpp):** Essential for grounding the model in core Python logic and syntax.
 * **[Kaggle Solutions Dataset](https://www.kaggle.com/):** Scraped discussions and notebooks to understand Kaggle-specific context (Pandas, Scikit-Learn, EDA techniques).
-* **[Data Science QA](https://www.google.com/search?q=https://huggingface.co/datasets/code_search_net):** (Or your specific HF link) Used to fine-tune the reasoning capabilities for theoretical questions.
+* **[Data Science QA](https://www.google.com/search?q=https://huggingface.co/datasets/code_search_net):** Used to fine-tune the reasoning capabilities for theoretical questions.
 
 ### 2. The Pipeline 🛠️
 
 We didn't just train; we engineered a pipeline for knowledge transfer.
 
 1. **Teacher Fine-Tuning (QLoRA):**
-* Base: **Llama-3.2-3B**.
-* Technique: **QLoRA** (Quantized Low-Rank Adaptation) with 4-bit quantization to fit training on consumer GPUs.
-* Result: A highly specialized "Expert" model.
-
+   * Base: **Llama-3.2-3B**.
+   * Technique: **QLoRA** (Quantized Low-Rank Adaptation) with 4-bit quantization to fit training on consumer GPUs.
+   * Result: A highly specialized "Expert" model.
 
 2. **Knowledge Distillation (The Magic):**
-* We built a custom **PyTorch Distillation Trainer**.
-* **Loss Function:** used **KL Divergence Loss** to align the probability distributions of the Student (1B) with the Teacher (3B). This transfers "Dark Knowledge" (the reasoning nuances) rather than just the final answer.
-
+   * We built a custom **PyTorch Distillation Trainer**.
+   * **Loss Function:** used **KL Divergence Loss** to align the probability distributions of the Student (1B) with the Teacher (3B). This transfers "Dark Knowledge" (the reasoning nuances) rather than just the final answer.
 
 3. **Deployment (Colab + Ngrok):**
-* The entire inference engine runs on **Google Colab** using T4 GPUs.
-* Served to the web via **Flask** and **Ngrok** tunneling, proving that powerful AI agents don't need expensive dedicated servers.
-
-
+   * The entire inference engine runs on **Google Colab** using T4 GPUs.
+   * Served to the web via **Flask** and **Ngrok** tunneling, proving that powerful AI agents don't need expensive dedicated servers.
 
 ---
 
@@ -88,6 +101,3 @@ We didn't just train; we engineered a pipeline for knowledge transfer.
 ## 📜 License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
----
-
